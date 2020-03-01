@@ -1,0 +1,41 @@
+$date
+	Mon Jan 27 22:35:49 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux8_tb $end
+$var wire 1 ! o $end
+$var reg 8 " I1 [7:0] $end
+$var reg 3 # I2 [2:0] $end
+$scope module m2 $end
+$var wire 8 $ d [7:0] $end
+$var wire 1 ! out $end
+$var wire 3 % s [2:0] $end
+$var wire 8 & w2 [7:0] $end
+$var wire 3 ' w1 [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111 '
+b1 &
+b0 %
+b1 $
+b0 #
+b1 "
+1!
+$end
+#10
+0!
+b0 '
+b0 &
+b111 #
+b111 %
+b1111111 "
+b1111111 $
+#20

@@ -1,0 +1,65 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-642-g3bdb50da)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000000876180 .scope module, "mux2_tb" "mux2_tb" 2 1;
+ .timescale 0 0;
+v0000000000873450_0 .var "I1", 1 0;
+v0000000000873130_0 .var "I2", 0 0;
+v00000000008734f0_0 .net "o", 0 0, L_0000000000873c10;  1 drivers
+S_0000000000876310 .scope module, "m2" "mux2" 2 13, 3 1 0, S_0000000000876180;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "s";
+    .port_info 1 /INPUT 2 "d";
+    .port_info 2 /OUTPUT 1 "out";
+L_00000000008432c0 .functor NOT 1, v0000000000873130_0, C4<0>, C4<0>, C4<0>;
+L_0000000000843410 .functor AND 1, L_00000000008432c0, L_0000000000873630, C4<1>, C4<1>;
+L_00000000001d8b70 .functor AND 1, v0000000000873130_0, L_0000000000873590, C4<1>, C4<1>;
+L_0000000000873c10 .functor OR 1, L_00000000008736d0, L_0000000000873270, C4<0>, C4<0>;
+v00000000008764a0_0 .net *"_s0", 0 0, L_0000000000843410;  1 drivers
+v00000000001db7a0_0 .net *"_s10", 0 0, L_00000000008736d0;  1 drivers
+v00000000001db840_0 .net *"_s12", 0 0, L_0000000000873270;  1 drivers
+v00000000001db8e0_0 .net *"_s3", 0 0, L_0000000000873630;  1 drivers
+v00000000008738f0_0 .net *"_s4", 0 0, L_00000000001d8b70;  1 drivers
+v0000000000873990_0 .net *"_s8", 0 0, L_0000000000873590;  1 drivers
+v0000000000873a30_0 .net "d", 1 0, v0000000000873450_0;  1 drivers
+v0000000000873ad0_0 .net "out", 0 0, L_0000000000873c10;  alias, 1 drivers
+v0000000000873b70_0 .net "s", 0 0, v0000000000873130_0;  1 drivers
+v0000000000873770_0 .net "w1", 0 0, L_00000000008432c0;  1 drivers
+v0000000000873810_0 .net "w2", 1 0, L_00000000008731d0;  1 drivers
+L_0000000000873630 .part v0000000000873450_0, 0, 1;
+L_00000000008731d0 .concat8 [ 1 1 0 0], L_0000000000843410, L_00000000001d8b70;
+L_0000000000873590 .part v0000000000873450_0, 1, 1;
+L_00000000008736d0 .part L_00000000008731d0, 0, 1;
+L_0000000000873270 .part L_00000000008731d0, 1, 1;
+    .scope S_0000000000876180;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "mux2-1_test.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000000000876180 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000000000876180;
+T_1 ;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0000000000873450_0, 0, 2;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000000873130_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0000000000873450_0, 0, 2;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000000873130_0, 0, 1;
+    %delay 10, 0;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\mux2_tb.v";
+    ".\mux2.v";

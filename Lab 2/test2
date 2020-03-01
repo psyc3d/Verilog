@@ -1,0 +1,77 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-642-g3bdb50da)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000001006320 .scope module, "fausingha_tb" "fausingha_tb" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "sum";
+    .port_info 3 /OUTPUT 1 "carry";
+v0000000001049000_0 .var "I1", 0 0;
+v0000000001049500_0 .var "I2", 0 0;
+o00000000010081e8 .functor BUFZ 1, C4<z>; HiZ drive
+v00000000010489c0_0 .net "a", 0 0, o00000000010081e8;  0 drivers
+o0000000001008218 .functor BUFZ 1, C4<z>; HiZ drive
+v0000000001048ec0_0 .net "b", 0 0, o0000000001008218;  0 drivers
+v0000000001049140_0 .net "carry", 0 0, L_00000000010039a0;  1 drivers
+v0000000001049460_0 .net "sum", 0 0, L_00000000010038c0;  1 drivers
+S_00000000010064b0 .scope module, "u1" "fausingha" 2 12, 3 1 0, S_0000000001006320;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "sum";
+    .port_info 3 /OUTPUT 1 "carry";
+L_0000000001006640 .functor XOR 1, v0000000001049000_0, v0000000001049500_0, C4<0>, C4<0>;
+L_00000000010066b0 .functor AND 1, v0000000001049000_0, v0000000001049500_0, C4<1>, C4<1>;
+L_00000000010038c0 .functor XOR 1, L_0000000001006640, L_00000000010066b0, C4<0>, C4<0>;
+L_0000000001003930 .functor AND 1, L_0000000001006640, L_00000000010066b0, C4<1>, C4<1>;
+L_00000000010039a0 .functor OR 1, L_0000000001003930, L_00000000010066b0, C4<0>, C4<0>;
+v0000000000fd33b0_0 .net "a", 0 0, v0000000001049000_0;  1 drivers
+v00000000010495a0_0 .net "b", 0 0, v0000000001049500_0;  1 drivers
+v0000000001049640_0 .net "carry", 0 0, L_00000000010039a0;  alias, 1 drivers
+v0000000001048f60_0 .net "sum", 0 0, L_00000000010038c0;  alias, 1 drivers
+v0000000001048b00_0 .net "w1", 0 0, L_0000000001006640;  1 drivers
+v00000000010490a0_0 .net "w2", 0 0, L_00000000010066b0;  1 drivers
+v00000000010491e0_0 .net "w3", 0 0, L_0000000001003930;  1 drivers
+    .scope S_0000000001006320;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "fausingha_test.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000000001006320 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000000001006320;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000001049000_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000001049500_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000001049000_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000001049500_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000001049000_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000001049500_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000001049000_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000001049500_0, 0, 1;
+    %delay 10, 0;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\fausingha_tb.v";
+    ".\fausingha.v";

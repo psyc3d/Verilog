@@ -1,0 +1,86 @@
+$date
+	Mon Jan 27 23:05:08 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux8_4_tb $end
+$var wire 1 ! o $end
+$var reg 8 " I1 [7:0] $end
+$var reg 3 # I2 [2:0] $end
+$scope module m2 $end
+$var wire 8 $ d [7:0] $end
+$var wire 3 % s [2:0] $end
+$var wire 2 & w [1:0] $end
+$var wire 1 ! out $end
+$scope module m1 $end
+$var wire 4 ' d [3:0] $end
+$var wire 1 ( out $end
+$var wire 2 ) s [1:0] $end
+$var wire 4 * w2 [3:0] $end
+$var wire 2 + w1 [1:0] $end
+$upscope $end
+$scope module m2 $end
+$var wire 4 , d [3:0] $end
+$var wire 1 - out $end
+$var wire 2 . s [1:0] $end
+$var wire 4 / w2 [3:0] $end
+$var wire 2 0 w1 [1:0] $end
+$upscope $end
+$scope module m3 $end
+$var wire 2 1 d [1:0] $end
+$var wire 1 ! out $end
+$var wire 1 2 s $end
+$var wire 1 3 w1 $end
+$var wire 2 4 w2 [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 4
+13
+02
+b10 1
+b11 0
+b1 /
+b0 .
+1-
+b1 ,
+b11 +
+b0 *
+b0 )
+0(
+b0 '
+b10 &
+b0 %
+b1 $
+b0 #
+b1 "
+0!
+$end
+#10
+b10 &
+b10 1
+0(
+1!
+b0 +
+b0 0
+b0 *
+b1000 /
+03
+b10 4
+b11 )
+b11 .
+12
+b111 '
+b1111 ,
+b111 #
+b111 %
+b1111111 "
+b1111111 $
+#20

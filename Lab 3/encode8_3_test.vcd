@@ -1,0 +1,31 @@
+$date
+	Tue Jan 28 11:40:14 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module encode8_3_tb $end
+$var wire 3 ! o [2:0] $end
+$var reg 8 " I1 [7:0] $end
+$scope module m2 $end
+$var wire 8 # d [7:0] $end
+$var wire 3 $ o [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111 $
+b100101 #
+b100101 "
+b111 !
+$end
+#10
+b0 !
+b0 $
+b1 "
+b1 #
+#20

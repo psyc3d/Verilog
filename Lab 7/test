@@ -1,0 +1,57 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-642-g3bdb50da)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00000000008763b0 .scope module, "srff_tb" "srff_tb" 2 1;
+ .timescale 0 0;
+v0000000000842e70_0 .var "I1", 0 0;
+v0000000000842f10_0 .var "I2", 0 0;
+v00000000008718c0_0 .var "I3", 0 0;
+v0000000000871960_0 .net "o1", 0 0, L_0000000000871b10;  1 drivers
+v0000000000871a00_0 .net "o2", 0 0, L_0000000000872b90;  1 drivers
+S_0000000000842ba0 .scope module, "s1" "srff" 2 13, 3 1 0, S_00000000008763b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "s";
+    .port_info 1 /INPUT 1 "r";
+    .port_info 2 /INPUT 1 "clk";
+    .port_info 3 /OUTPUT 1 "q";
+    .port_info 4 /OUTPUT 1 "p";
+L_0000000000843410 .functor NAND 1, v0000000000842e70_0, v00000000008718c0_0, C4<1>, C4<1>;
+L_0000000000871aa0 .functor NAND 1, v0000000000842f10_0, v00000000008718c0_0, C4<1>, C4<1>;
+L_0000000000871b10 .functor NAND 1, L_0000000000872b90, L_0000000000843410, C4<1>, C4<1>;
+L_0000000000872b90 .functor NAND 1, L_0000000000871b10, L_0000000000871aa0, C4<1>, C4<1>;
+v00000000001bef00_0 .net "a", 0 0, L_0000000000843410;  1 drivers
+v00000000001bb950_0 .net "b", 0 0, L_0000000000871aa0;  1 drivers
+v00000000001b86b0_0 .net "clk", 0 0, v00000000008718c0_0;  1 drivers
+v0000000000876540_0 .net "p", 0 0, L_0000000000872b90;  alias, 1 drivers
+v00000000008765e0_0 .net "q", 0 0, L_0000000000871b10;  alias, 1 drivers
+v0000000000842d30_0 .net "r", 0 0, v0000000000842f10_0;  1 drivers
+v0000000000842dd0_0 .net "s", 0 0, v0000000000842e70_0;  1 drivers
+    .scope S_00000000008763b0;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "srff_tb.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000000008763b0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_00000000008763b0;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000000842e70_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000000842f10_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008718c0_0, 0, 1;
+    %delay 10, 0;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\srff_tb.v";
+    ".\srff.v";

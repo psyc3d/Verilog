@@ -1,0 +1,338 @@
+$date
+	Tue Feb 04 15:37:33 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module arraymul_tb $end
+$var wire 8 ! o [7:0] $end
+$var reg 4 " I1 [3:0] $end
+$var reg 4 # I2 [3:0] $end
+$scope module a1 $end
+$var wire 4 $ a [3:0] $end
+$var wire 4 % b [3:0] $end
+$var wire 1 & c $end
+$var wire 3 ' w6 [2:0] $end
+$var wire 6 ( w5 [5:0] $end
+$var wire 8 ) w4 [7:0] $end
+$var wire 8 * w3 [7:0] $end
+$var wire 5 + w2 [4:0] $end
+$var wire 2 , w1 [1:0] $end
+$var wire 8 - out [7:0] $end
+$scope module f1 $end
+$var wire 1 . a $end
+$var wire 1 / b $end
+$var wire 1 0 carry $end
+$var wire 1 & cin $end
+$var wire 1 1 sum $end
+$var wire 3 2 w2 [2:0] $end
+$upscope $end
+$scope module f10 $end
+$var wire 1 3 a $end
+$var wire 1 4 b $end
+$var wire 1 5 carry $end
+$var wire 1 6 cin $end
+$var wire 1 7 sum $end
+$var wire 3 8 w2 [2:0] $end
+$upscope $end
+$scope module f11 $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 ; carry $end
+$var wire 1 < cin $end
+$var wire 1 = sum $end
+$var wire 3 > w2 [2:0] $end
+$upscope $end
+$scope module f12 $end
+$var wire 1 ? a $end
+$var wire 1 @ b $end
+$var wire 1 A carry $end
+$var wire 1 B cin $end
+$var wire 1 C sum $end
+$var wire 3 D w2 [2:0] $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 E a $end
+$var wire 1 F b $end
+$var wire 1 G carry $end
+$var wire 1 & cin $end
+$var wire 1 H sum $end
+$var wire 3 I w2 [2:0] $end
+$upscope $end
+$scope module f3 $end
+$var wire 1 J a $end
+$var wire 1 K b $end
+$var wire 1 L carry $end
+$var wire 1 M cin $end
+$var wire 1 N sum $end
+$var wire 3 O w2 [2:0] $end
+$upscope $end
+$scope module f4 $end
+$var wire 1 P a $end
+$var wire 1 Q b $end
+$var wire 1 R carry $end
+$var wire 1 & cin $end
+$var wire 1 S sum $end
+$var wire 3 T w2 [2:0] $end
+$upscope $end
+$scope module f5 $end
+$var wire 1 U a $end
+$var wire 1 V b $end
+$var wire 1 W carry $end
+$var wire 1 X cin $end
+$var wire 1 Y sum $end
+$var wire 3 Z w2 [2:0] $end
+$upscope $end
+$scope module f6 $end
+$var wire 1 [ a $end
+$var wire 1 \ b $end
+$var wire 1 ] carry $end
+$var wire 1 ^ cin $end
+$var wire 1 _ sum $end
+$var wire 3 ` w2 [2:0] $end
+$upscope $end
+$scope module f7 $end
+$var wire 1 a a $end
+$var wire 1 b b $end
+$var wire 1 c carry $end
+$var wire 1 d cin $end
+$var wire 1 e sum $end
+$var wire 3 f w2 [2:0] $end
+$upscope $end
+$scope module f8 $end
+$var wire 1 g a $end
+$var wire 1 h b $end
+$var wire 1 i carry $end
+$var wire 1 j cin $end
+$var wire 1 k sum $end
+$var wire 3 l w2 [2:0] $end
+$upscope $end
+$scope module f9 $end
+$var wire 1 & a $end
+$var wire 1 m b $end
+$var wire 1 n carry $end
+$var wire 1 o cin $end
+$var wire 1 p sum $end
+$var wire 3 q w2 [2:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 q
+1p
+1o
+0n
+0m
+b0 l
+0k
+0j
+0i
+0h
+0g
+b0 f
+0e
+0d
+0c
+0b
+0a
+b1 `
+0_
+0^
+1]
+1\
+1[
+b0 Z
+1Y
+0X
+0W
+1V
+0U
+b0 T
+1S
+0R
+1Q
+0P
+b0 O
+0N
+0M
+0L
+0K
+0J
+b0 I
+0H
+0G
+0F
+0E
+b0 D
+0C
+0B
+0A
+0@
+0?
+b0 >
+1=
+0<
+0;
+1:
+09
+b0 8
+17
+06
+05
+14
+03
+b0 2
+11
+00
+1/
+0.
+b110010 -
+b10 ,
+b0 +
+b11101000 *
+b100 )
+b110000 (
+b0 '
+0&
+b101 %
+b1010 $
+b101 #
+b1010 "
+b110010 !
+$end
+#10
+0p
+0\
+0o
+0Y
+b0 )
+0]
+0=
+0V
+0:
+01
+0S
+b0 !
+b0 -
+0_
+b0 `
+07
+0/
+0Q
+0[
+04
+b0 ,
+b0 *
+b0 (
+b0 #
+b0 %
+b1111 "
+b1111 $
+#20
+1=
+19
+b100 (
+1n
+b10 q
+1o
+1]
+1N
+b1 `
+0p
+1K
+1\
+1m
+1H
+1Y
+b100100 !
+b100100 -
+0_
+1k
+1E
+1U
+1[
+1g
+b10010 +
+b10110000 *
+b10100100 )
+b11 #
+b11 %
+b1100 "
+b1100 $
+#30
+0=
+1A
+09
+0n
+b1 D
+0o
+1@
+0N
+0]
+1p
+b0 q
+15
+0K
+0\
+1h
+1m
+0H
+0Y
+0_
+b0 `
+1e
+1k
+b1 8
+b10010000 !
+b10010000 -
+0C
+0E
+0U
+0[
+1b
+0g
+13
+14
+1?
+b0 +
+b0 *
+b11010000 )
+b11000 (
+b101 '
+b1100 #
+b1100 %
+#40
+1_
+1^
+b10 *
+1L
+0@
+b1 O
+05
+0A
+1K
+1H
+0N
+b0 8
+0C
+b0 D
+1E
+03
+1J
+04
+0?
+b11001 !
+b11001 -
+b11010 +
+b0 (
+b0 '
+b101 #
+b101 %
+b101 "
+b101 $
+#50
