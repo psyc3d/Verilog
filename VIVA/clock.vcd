@@ -1,0 +1,32 @@
+$date
+	Tue Mar 03 15:47:54 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module clk_tb $end
+$var reg 1 ! clock $end
+$scope module c1 $end
+$var wire 1 ! clock $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+$end
+#10
+0!
+#40
+1!
+#50
+0!
+#80
+1!
+#90
+0!
+#120
+1!
