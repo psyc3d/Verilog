@@ -1,5 +1,5 @@
 $date
-	Tue Mar 03 12:16:45 2020
+	Tue Mar 03 12:21:34 2020
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1s
 $end
-$scope module srff_tb $end
+$scope module jkff_tb $end
 $var wire 1 ! o2 $end
 $var wire 1 " o1 $end
 $var reg 1 # I1 $end
@@ -15,8 +15,8 @@ $var reg 1 $ I2 $end
 $var reg 1 % I3 $end
 $scope module s1 $end
 $var wire 1 % clk $end
-$var wire 1 $ r $end
-$var wire 1 # s $end
+$var wire 1 # j $end
+$var wire 1 $ k $end
 $var reg 1 " q $end
 $var reg 1 ! qbar $end
 $upscope $end

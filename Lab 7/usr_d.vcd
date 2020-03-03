@@ -1,0 +1,199 @@
+$date
+	Tue Mar 03 13:16:00 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module usr_d_tb $end
+$var wire 4 ! out [3:0] $end
+$var reg 4 " I1 [3:0] $end
+$var reg 1 # I2 $end
+$var reg 1 $ I3 $end
+$var reg 1 % I4 $end
+$var reg 2 & I5 [1:0] $end
+$scope module f1 $end
+$var wire 4 ' a [3:0] $end
+$var wire 1 % clk $end
+$var wire 1 $ ls $end
+$var wire 1 # rs $end
+$var wire 2 ( s [1:0] $end
+$var wire 4 ) w [3:0] $end
+$var wire 4 * out [3:0] $end
+$var wire 4 + o [3:0] $end
+$scope module d1 $end
+$var wire 1 % clock $end
+$var wire 1 , d $end
+$var reg 1 - q $end
+$var reg 1 . qbar $end
+$upscope $end
+$scope module d2 $end
+$var wire 1 % clock $end
+$var wire 1 / d $end
+$var reg 1 0 q $end
+$var reg 1 1 qbar $end
+$upscope $end
+$scope module d3 $end
+$var wire 1 % clock $end
+$var wire 1 2 d $end
+$var reg 1 3 q $end
+$var reg 1 4 qbar $end
+$upscope $end
+$scope module d4 $end
+$var wire 1 % clock $end
+$var wire 1 5 d $end
+$var reg 1 6 q $end
+$var reg 1 7 qbar $end
+$upscope $end
+$scope module m1 $end
+$var wire 1 8 d1 $end
+$var wire 1 9 d2 $end
+$var wire 1 # d3 $end
+$var wire 1 : d4 $end
+$var wire 1 ; out $end
+$var wire 2 < s [1:0] $end
+$var wire 4 = w2 [3:0] $end
+$var wire 2 > w1 [1:0] $end
+$upscope $end
+$scope module m2 $end
+$var wire 1 ? d1 $end
+$var wire 1 @ d2 $end
+$var wire 1 A d3 $end
+$var wire 1 B d4 $end
+$var wire 1 C out $end
+$var wire 2 D s [1:0] $end
+$var wire 4 E w2 [3:0] $end
+$var wire 2 F w1 [1:0] $end
+$upscope $end
+$scope module m3 $end
+$var wire 1 G d1 $end
+$var wire 1 H d2 $end
+$var wire 1 I d3 $end
+$var wire 1 J d4 $end
+$var wire 1 K out $end
+$var wire 2 L s [1:0] $end
+$var wire 4 M w2 [3:0] $end
+$var wire 2 N w1 [1:0] $end
+$upscope $end
+$scope module m4 $end
+$var wire 1 O d1 $end
+$var wire 1 P d2 $end
+$var wire 1 $ d3 $end
+$var wire 1 Q d4 $end
+$var wire 1 R out $end
+$var wire 2 S s [1:0] $end
+$var wire 4 T w2 [3:0] $end
+$var wire 2 U w1 [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11 U
+b0 T
+b0 S
+0R
+0Q
+0P
+0O
+b11 N
+b0 M
+b0 L
+0K
+1J
+0I
+0H
+0G
+b11 F
+b0 E
+b0 D
+0C
+1B
+0A
+0@
+0?
+b11 >
+b0 =
+b0 <
+0;
+0:
+09
+08
+17
+06
+05
+14
+03
+02
+11
+00
+0/
+1.
+0-
+0,
+b0 +
+b0 *
+b1111 )
+b0 (
+b110 '
+b0 &
+1%
+0$
+1#
+b110 "
+b0 !
+$end
+#10
+1,
+b1 +
+1;
+b10 >
+b100 =
+b10 F
+b10 N
+b10 U
+b1 &
+b1 (
+b1 <
+b1 D
+b1 L
+b1 S
+#20
+0,
+b0 +
+0;
+b1 >
+b0 =
+b1 F
+b1 N
+b1 U
+b10 &
+b10 (
+b10 <
+b10 D
+b10 L
+b10 S
+#30
+15
+b1000 +
+1R
+b0 >
+b0 F
+b0 N
+b0 U
+b1000 T
+0B
+0J
+1Q
+b11 &
+b11 (
+b11 <
+b11 D
+b11 L
+b11 S
+b1000 "
+b1000 '
+#40

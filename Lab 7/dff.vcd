@@ -1,5 +1,5 @@
 $date
-	Tue Mar 03 12:16:45 2020
+	Tue Mar 03 12:29:25 2020
 $end
 $version
 	Icarus Verilog
@@ -7,16 +7,14 @@ $end
 $timescale
 	1s
 $end
-$scope module srff_tb $end
+$scope module dff_tb $end
 $var wire 1 ! o2 $end
 $var wire 1 " o1 $end
 $var reg 1 # I1 $end
 $var reg 1 $ I2 $end
-$var reg 1 % I3 $end
-$scope module s1 $end
-$var wire 1 % clk $end
-$var wire 1 $ r $end
-$var wire 1 # s $end
+$scope module f1 $end
+$var wire 1 $ clock $end
+$var wire 1 # d $end
 $var reg 1 " q $end
 $var reg 1 ! qbar $end
 $upscope $end
@@ -24,18 +22,29 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-1%
-1$
+0$
 0#
 0"
 1!
 $end
 #10
-0%
-1#
-#20
 0!
 1"
-1%
+1#
+1$
+#20
+0#
 0$
 #30
+1#
+1$
+#40
+0$
+#50
+1!
+0"
+0#
+1$
+#60
+0$
+#70

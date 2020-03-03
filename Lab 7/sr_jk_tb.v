@@ -1,4 +1,4 @@
-module srff_tb();
+module sr_jk_tb();
 
 reg I1,I2,I3;
 
@@ -6,11 +6,11 @@ wire o1,o2;
 
 initial 
 begin 
-$dumpfile("srff_tb.vcd");
-$dumpvars(0,srff_tb);
+$dumpfile("sr_jk_tb.vcd");
+$dumpvars(0,sr_jk_tb);
 end
 
-srff s1(I1,I2,I3,o1,o2);
+sr_jk s1(I1,I2,I3,o1,o2);
 
 initial 
 begin

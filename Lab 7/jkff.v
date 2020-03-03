@@ -1,6 +1,6 @@
-module srff(s,r,clk,q,qbar);
+module jkff(j,k,clk,q,qbar);
 
-input s,r,clk;
+input j,k,clk;
 output reg q,qbar;
 
 initial 
@@ -10,7 +10,7 @@ initial
     end
 always@(posedge clk)
     begin 
-        case({s,r})
+        case({j,k})
         2'b 00: begin 
                     q = q ; 
                     qbar=qbar; 
@@ -22,6 +22,10 @@ always@(posedge clk)
 	    2'b 10: begin 
                     q=1; 
                     qbar=0; 
+                end
+	    2'b 11: begin 
+                    q=~q; 
+                    qbar=~qbar; 
                 end
         endcase
     end
